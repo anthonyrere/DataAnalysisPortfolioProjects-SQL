@@ -1,8 +1,8 @@
 SELECT *
 FROM NashvilleHousing
 
---cleaning data in SQL. Queries used in this project are CONVERT,
---UPDATE, ALTER TABLE, SET,
+--cleaning data in SQL using CONVERT,
+--UPDATE, ALTER TABLE, SET, PARSENAME, SUBSTRING.
 
 
 
