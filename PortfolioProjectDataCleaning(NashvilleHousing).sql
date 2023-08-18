@@ -136,21 +136,21 @@ SELECT *,
    ROW_NUMBER() OVER (
    PARTITION BY ParcelID,
                 PropertyAddress,
-				SalePrice,
-				SaleDate,
-				LegalReference
-				ORDER BY UniqueID
-				) row_num
+		SalePrice,
+		SaleDate,
+		LegalReference
+		ORDER BY UniqueID
+		) row_num
 
 FROM NashvilleHousing
 --ORDER BY ParcelID
 )
-select *
-from RowNumCte
-where row_num > 1
+DELETE *
+FROM RowNumCte
+WHERE row_num > 1
 
 
---delete unused column (do not do this)
+--delete unused column (only when required)
 ALTER TABLE NashvilleHousing
 DROP COLUMN OwnerAddress, PropertyAddress, SaleDate, TaxDistrict
 
