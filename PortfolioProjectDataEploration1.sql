@@ -47,11 +47,11 @@ GROUP BY location
 ORDER BY TotalDeathCount DESC
 
 --Global numbers
-SELECT date, SUM(new_cases), SUM(CONVERT(float, new_deaths)), SUM(CONVERT(float, new_deaths))/SUM(new_cases)*100 as DeathPercentage
+SELECT SUM(new_cases) TotalCases, SUM(CONVERT(float, new_deaths)) TotalDeaths, SUM(CONVERT(float, new_deaths))/SUM(new_cases)*100 as DeathPercentage
 FROM CovidDeaths 
 WHERE continent is not null
-GROUP BY date
 ORDER BY 1,2
+
 
 
 
