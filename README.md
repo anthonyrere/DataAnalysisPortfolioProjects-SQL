@@ -35,7 +35,8 @@ The dataset contains information about the property address, sale date, owner’
 * Inconsistent formatting of dates: To ensure consistency, the date formats were standardized using SQL's **CONVERT** functions
 * Missing values in critical fields: Using SQL's **UPDATE** statement, missing values were filled in where possible.
 * Duplicates in customer records: Duplicate records were identified and removed using the **ROW_NUMBER()** window function and **DELETE** function
-* Inconsistent values in text columns: Inconsistent values were corrected using SQL's **CASE** statement:
+* Inconsistent values in text columns: Inconsistent values were corrected using SQL's **CASE** statement.
+* Strings were separated into components using SQL's **PARSENAME** and **SUBSTRING** function.
 
 ### ABOUT THE DATA
 NashVille Housing data is recorded in a.csv file and has the following amount of rows and columns:
