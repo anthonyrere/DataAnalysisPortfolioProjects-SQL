@@ -7,7 +7,22 @@
   * SQL script can be found [**HERE**](https://github.com/anthonyrere/DataAnalysisPortfolioProjects-SQL/blob/main/PortfolioProjectDataEploration1.sql)
 
 ## DATA CLEANING USING SQL
+### INTRODUCTION
+This is a SQL project on Data Cleaning on NashVille Housing Data.
+This project is aimed to show how efficiently SQL can be used to clean data effectively.
+
 This project involves data cleaning process using SQL where I took a raw dataset containing Nashville Housing data. The dataset contains inconsistencies, error and missing values which needs to be addressed before the data can be used for meaningful insights.
+
+### SQL CONCEPT APPLIED
+*	CONVERT
+*	PARSENAME
+*	SUBSTRING
+*	FORMAT
+*	CHARINDEX
+*	ALTER TABLE
+*	CASE STATEMENTS
+*	CTE
+
 
 ### CHALLENGES 
 The dataset contains information about the property address, sale date, owner’s address, sale price, Owner’s name bedrooms, land value, building value, parcel ID, Unique ID of each building, year built. However, due to inconsistencies the dataset includes issues such as:
@@ -21,6 +36,10 @@ The dataset contains information about the property address, sale date, owner’
 * Missing values in critical fields: Using SQL's **UPDATE** statement, missing values were filled in where possible.
 * Duplicates in customer records: Duplicate records were identified and removed using the **ROW_NUMBER()** window function and **DELETE** function
 * Inconsistent values in text columns: Inconsistent values were corrected using SQL's **CASE** statement:
+
+### ABOUT THE DATA
+NashVille Housing data is recorded in a.csv file and has the following amount of rows and columns:
+• There are 56,373 rows and 21 columns.
 
 The data cleaning process, which can be found [here](https://github.com/anthonyrere/DataAnalysisPortfolioProjects-SQL/blob/main/PortfolioProjectDataCleaning(NashvilleHousing).sql) led to significant improvements in the dataset's quality. This project showcased how SQL can effectively facilitate data cleaning. 
 
