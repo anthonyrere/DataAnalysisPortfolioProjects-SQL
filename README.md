@@ -1,4 +1,4 @@
-# DATA ANALYSIS PORTFOLIO PROJECT USING SQL
+# DATA ANALYSIS PORTFOLIO PROJECT USING MSSQL
 
 - [X] NashvilleHousing dataset - DATA CLEANING
   * SQL script can be found [**HERE**](https://github.com/anthonyrere/DataAnalysisPortfolioProjects-SQL/blob/main/PortfolioProjectDataCleaning(NashvilleHousing).sql)
